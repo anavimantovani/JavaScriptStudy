@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ScienceClass - Feedback</title>
+    <link rel="stylesheet" href="./Stylesheets/scienceclass_style.css" />
+    <script src="finalProject.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <a href="index.html" id="headerScience">ScienceClass</a>
+    </header>
+
+    <section class="background">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="grade.html">Calculate Grade</a></li>
+          <li><a href="leaf.html">Leaf size</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </nav>
+
+      <main>
+        <form
+          action="mailto:sure@sterlingmid.edu"
+          method="post"
+          enctype="text/plain"
+        >
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" name="firstName"/><br />
+
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" name="lastName" /><br />
+
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" /><br />
+
+          <label for="quarter">Class Quarter:</label>
+          <select id="quarter" name="quarter" >
+            <option value="">Select a quarter</option>
+            <option value="first">First Quarter</option>
+            <option value="second">Second Quarter</option>
+            <option value="third">Third Quarter</option>
+            <option value="fourth">Fourth Quarter</option></select
+          ><br />
+
+          <label>What did you like about the class?</label><br />
+          <input type="checkbox" id="lecture" name="likes[]" value="lecture" />
+          <label for="lecture">Lecture</label><br />
+          <input type="checkbox" id="lab" name="likes[]" value="lab" />
+          <label for="lab">Lab</label><br />
+          <input type="checkbox" id="project" name="likes[]" value="project" />
+          <label for="project">Project</label><br />
+
+          <label for="takeAgain"
+            >Would you take another class from Ms. Sure?</label
+          ><br />
+          <input type="radio" id="yes" name="takeAgain" value="yes" />
+          <label for="yes">Yes</label>
+          <input type="radio" id="no" name="takeAgain" value="no" />
+          <label for="no">No</label><br />
+
+          <label for="comments">Comments:</label><br />
+          <textarea id="comments" name="comments"></textarea><br />
+
+          <div class="form-buttons">
+            <input type="submit" value="Send Feedback" />
+            <input type="reset" value="Clear Form" />
+          </div>
+        </form>
+      </main>
+
+
+      <footer>
+        <p>
+          Discover the wonders of nature with us and learn new things along the
+          way!
+        </p>
+      </footer>
+    </section>
+  </body>
+</html>
